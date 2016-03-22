@@ -1,0 +1,111 @@
+body {
+  position: relative;
+  text-align: center;
+  background: #24aecd;
+}
+
+h1 {
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+}
+
+.birds {
+  margin: 1% auto;
+  border: 1px solid white;
+  width: 551px;
+  height: 304px;
+}
+
+.clouds {
+  margin: 1% auto;
+}
+
+
+@-webkit-keyframes play {
+  from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: -551px;
+    }
+}
+@-moz-keyframes play {
+  from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: -551px;
+    }
+}
+@keyframes play {
+  from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: -551px;
+    }
+}
+
+@-webkit-keyframes playY {
+  from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: -304px;
+  }
+}
+
+@-moz-keyframes playY {
+from {
+  background-position-y: 0;
+}
+to {
+  background-position-y: -304px;
+}
+}
+  @keyframes playY {
+  from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: -304px;
+  }
+}
+
+@-webkit-keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+.container {
+  text-align: center;
+  margin: 10% auto;
+  position: relative;
+}
+
+.animate-area	{
+  position: relative;
+  margin: 2% auto;
+	width:951px;
+	height: 190px;
+	background: url("https://davidwalsh.name/demo/bg-clouds.png");
+	background-position:center center ;
+
+	-webkit-animation: animatedBackground 40s linear infinite;
+}
+
+
+.birdy {
+    display: block;
+    position: absolute;
+    margin: 2% 40%;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+    background: url("http://i.stack.imgur.com/XpCyX.png") left center;
+
+  -webkit-animation: play .5s infinite steps(5) backwards, playY 1.5s infinite steps(3) backwards;
+  -moz-animation: play .5s infinite steps(5) backwards, playY 1.5s infinite steps(3) backwards;
+  animation: play .5s infinite steps(5) backwards,  playY 1.5s infinite steps(3) backwards;
+}
