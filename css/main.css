@@ -74,11 +74,31 @@ to {
 }
 
 @-webkit-keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
+	from {
+    background-position: 0 0;
+  }
+	to {
+    background-position: 100% 0;
+  }
+}
+@-moz-keyframes animatedBackground {
+	from {
+    background-position: 0 0;
+  }
+	to {
+    background-position: 100% 0;
+  }
+}
+@keyframes animatedBackground {
+	from {
+    background-position: 0 0;
+  }
+	to {
+    background-position: 100% 0;
+  }
 }
 
-.container {
+.con {
   text-align: center;
   margin: 10% auto;
   position: relative;
@@ -94,7 +114,6 @@ to {
 
 	-webkit-animation: animatedBackground 40s linear infinite;
 }
-
 
 .birdy {
     display: block;
