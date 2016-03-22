@@ -1,26 +1,13 @@
 body {
-  position: relative;
+  color: white;
   text-align: center;
   background: #24aecd;
 }
 
 h1 {
-  color: white;
   font-family: 'Indie Flower', cursive;
   font-size: 50px;
 }
-
-.birds {
-  margin: 1% auto;
-  border: 1px solid white;
-  width: 551px;
-  height: 304px;
-}
-
-.clouds {
-  margin: 1% auto;
-}
-
 
 @-webkit-keyframes play {
   from {
@@ -99,30 +86,28 @@ to {
 }
 
 .container {
-  text-align: center;
-  margin: 10% auto;
-  position: relative;
+  margin: 1% auto;
 }
 
 .animate-area	{
   position: relative;
-  margin: 2% auto;
-	width:951px;
+  margin: 1% auto;
+	width: 80%;
 	height: 190px;
-	background: url("https://davidwalsh.name/demo/bg-clouds.png");
+	background: url("../assets/bg-clouds.png");
 	background-position:center center ;
 
 	-webkit-animation: animatedBackground 40s linear infinite;
+  -moz-animation: animatedBackground 40s linear infinite;
+  animation: animatedBackground 40s linear infinite;
 }
 
 .birdy {
-    display: block;
     position: absolute;
     margin: 2% 40%;
     width: 100px;
     height: 100px;
-    z-index: 100;
-    background: url("http://i.stack.imgur.com/XpCyX.png") left center;
+    background: url("../assets/XpCyX.png") center center;
 
   -webkit-animation: play .5s infinite steps(5) backwards, playY 1.5s infinite steps(3) backwards;
   -moz-animation: play .5s infinite steps(5) backwards, playY 1.5s infinite steps(3) backwards;
