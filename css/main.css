@@ -4,9 +4,14 @@ body {
   background: #24aecd;
 }
 
+.siteLink {
+    color: white;
+    transition: all 0.5s ease;
+}
+
 h1 {
   font-family: 'Indie Flower', cursive;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 @-webkit-keyframes play {
@@ -112,4 +117,27 @@ to {
   -webkit-animation: play .5s infinite steps(5) backwards, playY 1.5s infinite steps(3) backwards;
   -moz-animation: play .5s infinite steps(5) backwards, playY 1.5s infinite steps(3) backwards;
   animation: play .5s infinite steps(5) backwards,  playY 1.5s infinite steps(3) backwards;
+}
+
+a:hover {
+    color: rgba(138, 194, 73, 0.83) !important;
+}
+
+span {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.footerPara {
+    line-height: 150%;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
 }
